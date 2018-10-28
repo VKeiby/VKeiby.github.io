@@ -8,11 +8,13 @@
 	display: block;
 }
 .section {
-	/* background-color: #ccc;*/
+	background-color: #ccc;
 	padding: 30px 0;
+
 
 }
 .container, .col-lg-6 {
+	background-color: #e33;
 }
 
 .form {
