@@ -11,6 +11,7 @@
 }
 .menu {
   display: inline-block;
+  text-align: center;
   width: 13%;
 }
 /* Basic Setting */
