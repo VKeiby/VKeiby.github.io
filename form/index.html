@@ -84,36 +84,102 @@
 </div> <!-- container -->
 </main>
 
+   <!--  Main collection slider -->
+
+   <div class="slider">
+     <div class="container">
+      <h2 class="section-header">
+        Примеры наших работ
+      </h2>
+       <div class="foto-slider">
+        <div class="foto-block">
+          <div class="foto-img"><img src="img/6_result.JPG" alt="1"></div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odio, libero qui atque ipsa saepe?</p>
+        </div>
+        <div class="foto-block">
+          <div class="foto-img"><img src="img/5_result.JPG" alt="2"></div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, nihil, odit! Dolores sed, recusandae similique.</p>
+        </div>
+        <div class="foto-block">
+          <div class="foto-img"><img src="img/4_result.JPG" alt="3"></div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel architecto aut maiores inventore saepe rerum.</p>
+        </div>
+        <div class="foto-block">
+          <div class="foto-img"><img src="img/3_result.JPG" alt="4"></div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatum porro enim, assumenda illum quod.</p>
+        </div>
+        <div class="foto-block">
+          <div class="foto-img"><img src="img/11_result.JPG" alt="5"></div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur aliquid aliquam harum, rerum repellendus.</p>
+        </div>
+        <div class="foto-block">
+          <div class="foto-img"><img src="img/12_result.JPG" alt="6"></div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dicta et debitis ex quidem pariatur.</p>
+        </div>
+        <div class="foto-block">
+          <div class="foto-img"><img src="img/1_result.JPG" alt="7"></div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam tenetur error praesentium repellat vel incidunt.</p>
+        </div>
+        <div class="foto-block">
+          <div class="foto-img"><img src="img/2_result.JPG" alt="8"></div>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi hic veritatis voluptatum sapiente earum delectus.</p>
+        </div>        
+      </div>  <!-- foto-slider -->
+     </div>   <!-- container -->
+   </div>     <!-- slider -->
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- fotorama.css & fotorama.js. -->
-<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 
-   <!--  Main collection slider -->
-
-   <div class="row">
-     <div class="container">
-       <div class="fotorama">
-        <img src="img/IMG_20181018_163155_071.jpg" alt="111">
-        <img src="img/IMG_20181019_213835_830.jpg" alt="222">
-        <img src="img/IMG_20181019_213835_832.jpg" alt="333">
-        <img src="img/IMG_20181023_142211_227.jpg" alt="444">
-        <img src="img/IMG_20181023_142211_231.jpg" alt="555">
-        <img src="img/IMG_20181028_174605_200.jpg" alt="666">
-        <img src="img/IMG_20181028_174605_205.jpg" alt="777">
-        <img src="img/IMG_20181028_174605_206.jpg" alt="888">
-      </div>
-     </div>
-   </div>
-
-
+    <!-- slick slider -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <!-- slick slider's DLL -->
+    <script src="slick/slick.min.js"></script>
+    <!-- Initialization slick slider -->
+    <script>  $(document).ready(function(){
+    $('.foto-slider').slick({      
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 2,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '100px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+      });
+    }); </script>
 
   </body>
 </html>
